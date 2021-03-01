@@ -26,8 +26,8 @@ SET time_zone = "+00:00";
 -- Estructura de tabla para la tabla `usuario`
 --
 
-create database crud_users;
-use crud_users;
+create database prod2;
+use prod2;
 
 CREATE TABLE IF NOT EXISTS `productos` (
   id int AUTO_INCREMENT not null PRIMARY KEY,
