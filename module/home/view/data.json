@@ -1,0 +1,28 @@
+{
+    "items": [
+        {
+            "src": "images/aveng.png",
+            "title": "Image 1"
+        },
+        {
+            "src": "images/bros.jpg",
+            "title": "Image 2"
+        },
+        {
+            "src": "images/aveng.png",
+            "title": "Image 3"
+        },
+        {
+            "src": "images/aveng.png",
+            "title": "Image 4"
+        },
+        {
+            "src": "images/aveng.png",
+            "title": "Image 5"
+        },
+        {
+            "src": "images/aveng.png",
+            "title": "Image 6"
+        }
+    ]
+}
