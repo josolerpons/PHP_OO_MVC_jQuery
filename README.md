@@ -31,10 +31,12 @@
 <h2>Build With</h2>
 
 <ul>
-  <li>PHP</li>
-  <li>JavaScript</li>
-  <li>JQuery</li>
-  <li>Bootstrap</li>
+  <li><a href="https://www.php.net/">PHP</a></li>
+  <li><a href="https://www.javascript.com/">JavaScript</a></li>
+  <li><a href="https://jquery.com/">JQuery</a></li>
+  <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
+  <li><a href="https://www.googleapis.com/books/v1/volumes?q=videogames">Google Api Key Videogames</a></li>
+  <li><a href="https://botmonster.com/jquery-bootpag/#.YD_zD09KhuQ">Bootpag</a></li>
 </ul>
 
 <h2>Authors</h2>
