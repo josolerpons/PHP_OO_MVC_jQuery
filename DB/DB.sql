@@ -80,4 +80,7 @@ CREATE TABLE IF NOT EXISTS `carousel` (
   
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
-
+INSERT INTO `carousel` (`id`, `img`, `tipo`) VALUES
+('3', 'module/home/view/images/hai.png', 'anime'),
+('1', 'module/home/view/images/marvel.jpg','pelicula'),
+('2', 'module/home/view/images/gi.jpeg','videojuego');
