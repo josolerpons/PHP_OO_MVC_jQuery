@@ -27,3 +27,18 @@
 
 <img src="readmeimg/Captura%20de%20pantalla%20de%202021-03-03%2011-59-18.png">
 <p>Language selector according to our clients</p>
+
+<h2>Build With</h2>
+
+<ul>
+  <li>PHP</li>
+  <li>JavaScript</li>
+  <li>JQuery</li>
+  <li>Bootstrap</li>
+</ul>
+
+<h2>Authors</h2>
+
+<ul>
+  <li>Jose Soler Pons</li>
+</ul>
