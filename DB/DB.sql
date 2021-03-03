@@ -37,19 +37,47 @@ CREATE TABLE IF NOT EXISTS `productos` (
   `tipo` varchar(30) COLLATE utf8_spanish_ci NOT NULL,
   `reed` varchar(20) COLLATE utf8_spanish_ci NOT NULL,
   `prov` varchar(30) COLLATE utf8_spanish_ci NOT NULL
-
-
+  `img` varchar(80) COLLATE utf8_spanish_ci NOT NULL,
+  `genero` varchar(30) COLLATE utf8_spanish_ci NOT NULL,
+  `count` INT
+  
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
---
--- Volcado de datos para la tabla `usuario`
---
+INSERT INTO `productos` (`id`, `codprod`, `name`, `madein`, `tipo`, `reed`, `prov`,`img`,`genero`,`count`) VALUES
+('1', '11111', 'ironman', 'EEUU', 'pelicula', '+12', 'Asia', 'module/shop/details/iron.jpg','accion','0'),
+('2', '22222', 'pokemon', 'japon', 'videojuego', '+3', 'Europa','module/shop/details/pok.jpg','aventura','0'),
+('3', '33333', 'haikyuu', 'japon', 'anime', '+3', 'Europa', 'module/shop/details/hai.png','deporte','0');
 
-INSERT INTO `productos` (`id`, `codprod`, `name`, `madein`, `tipo`, `reed`, `prov`) VALUES
-('1', '11111', 'starwars', 'EEUU', 'fantasia', '+18', 'America'),
-('2', '22222', 'pokemon', 'japon', 'aventura', '+3', 'Europa'),
-('3', '33333', 'naruto', 'japon', 'shounen', '+12', 'Asia');
+CREATE TABLE IF NOT EXISTS `maps` (
+  `nombre` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+    `lat` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+    `lng` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+    codshop int NOT NULL,
+    id int NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+INSERT INTO `maps` (`nombre`, `lat`, `lng`, `codshop`, `id`) VALUES
+('pelicula shop', '39.4697495', '-0.37739', '1', '1'),
+('anime shop', '38.8220593', '-0.6063927', '2', '2'),
+('videojuego shop', '38.9666700', '-0.1833300', '3', '3');
+
+CREATE TABLE IF NOT EXISTS `catalog` (
+   id int NOT NULL,
+  `tipo` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `img` varchar(50) COLLATE utf8_spanish_ci NOT NULL
+  
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+INSERT INTO `catalog` (`id`, `tipo`, `img`) VALUES
+('1', 'anime', 'module/home/view/images/stone.jpeg'),
+('2', 'pelicula', 'module/home/view/images/iron.jpg'),
+('3', 'videojuego', 'module/home/view/images/mine.jpeg');
+
+CREATE TABLE IF NOT EXISTS `carousel` (
+   id int NOT NULL,
+  `img` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `tipo` varchar(50) COLLATE utf8_spanish_ci NOT NULL
+  
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+
