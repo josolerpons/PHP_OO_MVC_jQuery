@@ -1,3 +1,7 @@
 # PHP_OO_MVC_jQuery
 
-<h1>PHP_OO_MVC_JQuery</h1>
+<p>This project has been developed during the December period to date. Its functionality consists of a product store<p>
+  
+ <h2> Project screenshots </h2>
+ 
+ 
